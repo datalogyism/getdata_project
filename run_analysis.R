@@ -1,7 +1,10 @@
 # This script asssumes the data has been downloaded and the
 # "UCI HAR Dataset" folder is in the working directory
+# Run with source("run_analysis.R")
+
 library(plyr)
-nrows=100
+library(reshape2)
+nrows=-1
 
 # Load the various datasets, and label columns
 test.x          <- read.table("./UCI HAR Dataset/test/X_test.txt",   nrows=nrows)
